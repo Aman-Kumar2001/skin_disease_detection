@@ -16,6 +16,7 @@ Thumbs.db
 .vscode/
 
 # Processed data
-data/train/
-data/valid/
+data/SkinDisease
+data/SkinDisease/train/
+data/SkinDisease/test/
 .env
