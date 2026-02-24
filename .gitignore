@@ -16,7 +16,8 @@ Thumbs.db
 .vscode/
 
 # Processed data
-data/SkinDisease
-data/SkinDisease/train/
-data/SkinDisease/test/
+data/kaggle
+data/kaggle/train/
+data/kaggle/test/
+data/kaggle/val/
 .env
