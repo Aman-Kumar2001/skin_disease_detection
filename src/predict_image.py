@@ -8,7 +8,7 @@ import json
 import cv2
 import sys
 
-MODEL_PATH = "model/efficientnet_model.keras"
+MODEL_PATH = "model/skin_model.keras"
 ClASS_PATH = "model/class_names.json"
 
 model = tf.keras.models.load_model(MODEL_PATH)
@@ -19,7 +19,7 @@ with open(ClASS_PATH,'r') as f:
 
 def preprocess_image(image_path):
     image = cv2.imread(image_path, cv2.COLOR_BGR2RGB)
-    image = cv2.resize(image, (224,224))
+    image = cv2.resize(image, (380,380))
 
     processed_img = preprocess_input(image)
     processed_img = np.expand_dims(processed_img, axis=0)
